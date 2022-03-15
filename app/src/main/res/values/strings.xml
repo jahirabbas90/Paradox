@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Paradox</string>
+    <string name="client_login">For Client Login</string>
+    <string name="userId">USER ID</string>
+    <string name="password">PASSWORD</string>
+    <string name="pin">PIN</string>
+    <string name="login">Login</string>
+    <string name="disclaimer">Disclaimer</string>
+</resources>

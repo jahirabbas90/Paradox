@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_700"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".views.LoginActivity">
+
+    <ImageView
+        android:layout_marginStart="@dimen/text_size16dp"
+        android:layout_marginEnd="@dimen/text_size16dp"
+        android:id="@+id/iv_logo"
+        android:layout_width="@dimen/margin_100dp"
+        android:layout_height="@dimen/margin_100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_50dp"
+        android:contentDescription="@null"
+        android:src="@drawable/circle_shaape"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"/>
+
+    <com.paradoxclient.paradox.widgets.mTextViewBold
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_header"
+        android:textColor="@color/black_700"
+        android:layout_margin="@dimen/margin_10dp"
+        android:text="@string/client_login"
+        android:layout_below="@+id/iv_logo"
+        android:gravity="center"
+        android:textSize="@dimen/text_size16sp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_marginStart="@dimen/text_size16dp"
+        android:layout_marginEnd="@dimen/text_size16dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_below="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/margin_2dp"
+        app:cardCornerRadius="@dimen/margin_30dp"
+        app:cardBackgroundColor="@color/white_700">
+
+        <com.paradoxclient.paradox.widgets.mEditView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_40dp"
+            android:background="@drawable/rounded_corner_rectangle"
+            android:id="@+id/et_userId"
+            android:hint="@string/userId"
+            android:paddingStart="@dimen/margin_10dp"
+            android:paddingEnd="@dimen/margin_10dp"
+            android:textSize="@dimen/text_size14sp"
+            android:textColor="@color/black_700"
+            android:textColorHint="@color/black_200"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_marginStart="@dimen/text_size16dp"
+        android:layout_marginEnd="@dimen/text_size16dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_below="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/margin_2dp"
+        app:cardCornerRadius="@dimen/margin_30dp"
+        app:cardBackgroundColor="@color/white_700">
+
+        <com.paradoxclient.paradox.widgets.mEditView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_40dp"
+            android:background="@drawable/rounded_corner_rectangle"
+            android:id="@+id/et_password"
+            android:hint="@string/password"
+            android:paddingStart="@dimen/margin_10dp"
+            android:paddingEnd="@dimen/margin_10dp"
+            android:textSize="@dimen/text_size14sp"
+            android:textColor="@color/black_700"
+            android:textColorHint="@color/black_200"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card3"
+        android:layout_marginStart="@dimen/text_size16dp"
+        android:layout_marginEnd="@dimen/text_size16dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_below="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/margin_2dp"
+        app:cardCornerRadius="@dimen/margin_30dp"
+        app:cardBackgroundColor="@color/white_700">
+
+        <com.paradoxclient.paradox.widgets.mEditView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_40dp"
+            android:background="@drawable/rounded_corner_rectangle"
+            android:id="@+id/et_pin"
+            android:hint="@string/pin"
+            android:paddingStart="@dimen/margin_10dp"
+            android:paddingEnd="@dimen/margin_10dp"
+            android:textSize="@dimen/text_size14sp"
+            android:textColor="@color/black_700"
+            android:textColorHint="@color/black_200"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/text_size16dp"
+        android:layout_marginEnd="@dimen/text_size16dp"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:layout_below="@+id/card3"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/margin_10dp"
+            app:cardCornerRadius="@dimen/margin_30dp"
+            app:cardElevation="@dimen/margin_2dp">
+
+            <com.paradoxclient.paradox.widgets.mButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_5dp"
+                android:background="@color/blue_700"
+                android:id="@+id/btn_login"
+                android:text="@string/login"
+                android:textColor="@color/white_700"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/margin_10dp"
+            app:cardCornerRadius="@dimen/margin_30dp"
+            app:cardElevation="@dimen/margin_2dp">
+
+            <com.paradoxclient.paradox.widgets.mButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_5dp"
+                android:background="@color/blue_700"
+                android:id="@+id/btn_disclaimer"
+                android:text="@string/disclaimer"
+                android:textColor="@color/white_700"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
